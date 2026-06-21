@@ -49,6 +49,7 @@ Thumbs.db
 # generated outputs / model artifacts
 *.ckpt
 *.pt
+!model_cp_*.pt
 *.log
 preds.json
 results_*.json
