@@ -48,12 +48,15 @@ Thumbs.db
 
 # generated outputs / model artifacts
 *.ckpt
+!checkpoints/*.ckpt
 *.pt
 !model_cp_*.pt
 *.log
 preds.json
 results_*.json
+!results_cp_*.json
 model_history.json
 connector_graph.json
 checkpoints/*.json
+!checkpoints/*_history.json
 _selftest*
