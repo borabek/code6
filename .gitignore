@@ -1,0 +1,58 @@
+# Python bytecode / caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments (never commit these)
+.venv/
+venv/
+env/
+ENV/
+
+# Editor / tool local settings
+.claude/
+.idea/
+.vscode/
+
+# Build / packaging artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Test / type-checker caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Stray / temporary / backup files
+*.tmp
+*.tmp.npz
+file.tmp
+*.bak
+*.ckpt.bak
+
+# DiffusionNet eigenbasis cache (large .npz files, regenerated per machine)
+op_cache/
+
+# Checkpoints are BINARY and grow git history fast (each epoch rewrites last.ckpt).
+# Prefer Git LFS or an external/artifact store for them. If you DON'T use LFS,
+# uncomment the next line to keep them out of git and share via a drive instead:
+# checkpoints/
+# (They were historically tracked so other machines could `git pull` + --resume.
+#  With LFS configured via .gitattributes that still works without bloating history.)
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# generated outputs / model artifacts
+*.ckpt
+*.pt
+*.log
+preds.json
+results_*.json
+model_history.json
+connector_graph.json
+checkpoints/*.json
+_selftest*
